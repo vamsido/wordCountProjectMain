@@ -1,0 +1,82 @@
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+
+<script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap.min.js"></script>
+
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap.min.css" rel="stylesheet">
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+input[type=text], select, textarea {
+    width: 10%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>Robust Accounting System</h3>
+
+<a href="{% url 'about' %}">About</a>
+</br>
+<div class="container">
+  <form action="{% url 'wordcount' %}" >
+
+    <label for="country">Select Database :</label>
+    <select id="database" name="database">
+      <option value="NHDC">Nhdc</option>
+      <option value="AAVIN">Aavin</option>
+    </select>
+  </br>
+    <label for="lname">Enter Word:</label>
+    <input type="text" id="word" name="word">
+    </br>
+
+
+    <label for="submit">&#160;&#160;&#160;</label>
+    <label for="submit">&#160;&#160;&#160;</label>
+    <label for="submit">&#160;&#160;&#160;</label>
+    <label for="submit">&#160;&#160;&#160;</label>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>

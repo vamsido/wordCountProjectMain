@@ -1,0 +1,17 @@
+<a href="{% url 'homepage' %}" >Go To Home Page</a>
+
+</br>
+
+<label for="lname">No Of Words are:{{wc}}</label>
+
+</br>
+
+{% for wrd,count in words %}
+
+{{wrd}} - {{count}}
+</br>
+
+{%endfor%}
+
+</br>
+<a href="{% url 'homepage' %}" >Go To Home Page</a>
